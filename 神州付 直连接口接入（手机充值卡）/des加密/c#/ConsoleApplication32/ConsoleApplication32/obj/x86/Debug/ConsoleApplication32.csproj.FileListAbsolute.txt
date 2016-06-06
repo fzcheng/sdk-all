@@ -1,0 +1,5 @@
+E:\test\ConsoleApplication32\ConsoleApplication32\bin\Debug\ConsoleApplication32.exe
+E:\test\ConsoleApplication32\ConsoleApplication32\bin\Debug\ConsoleApplication32.pdb
+E:\test\ConsoleApplication32\ConsoleApplication32\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\test\ConsoleApplication32\ConsoleApplication32\obj\x86\Debug\ConsoleApplication32.exe
+E:\test\ConsoleApplication32\ConsoleApplication32\obj\x86\Debug\ConsoleApplication32.pdb

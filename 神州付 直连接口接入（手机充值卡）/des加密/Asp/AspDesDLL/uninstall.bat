@@ -1,0 +1,3 @@
+regasm /u /codebase DesForAsp.dll
+pause
+echo 按任意键继续...

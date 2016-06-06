@@ -1,0 +1,355 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mqhy_pay_bg"
+    tools:context="com.mq.pay.szf.SzfCardPayActivity" >
+
+    <RelativeLayout
+        android:id="@+id/mqhy_pay_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/mqhy_pay_bottom"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/mqhyPayBackBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/mqhy_pay_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mqhyPayCardTitleHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mqhy_pay_title_head"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mqhy_pay_head_title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mqhy_pay_title"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:layout_below="@id/mqhy_pay_head"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/mqhy_pay_info"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/mqhy_pay_card_sn"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mqhy_pay_title" />
+
+            <EditText
+                android:id="@+id/mqhyPayCardSn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:hint="@string/mqhy_pay_card_sn_input"
+                android:textSize="@dimen/mqhy_pay_title" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/mqhy_payway_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/mqhy_pay_card_password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mqhy_pay_title" />
+
+            <EditText
+                android:id="@+id/mqhyPayCardPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:hint="@string/mqhy_pay_card_password_input"
+                android:textSize="@dimen/mqhy_pay_title" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mqhy_pay_select_payway"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/mqhy_pay_title"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/mqhy_select_payway"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mqhy_pay_card_payway"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mqhy_pay_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mqhy_pay_initCardMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mqhy_pay_select_payway"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <Button
+                android:id="@+id/mqhyPayCardMoneyBtn0"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/mqhy_pay_card_item"
+                android:textSize="@dimen/mqhy_pay_title" />
+
+            <Button
+                android:id="@+id/mqhyPayCardMoneyBtn1"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mqhy_pay_card_item"
+                android:textSize="@dimen/mqhy_pay_title" />
+
+            <Button
+                android:id="@+id/mqhyPayCardMoneyBtn2"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/mqhy_pay_card_item"
+                android:textSize="@dimen/mqhy_pay_title" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="3dp" >
+
+            <Button
+                android:id="@+id/mqhyPayCardMoneyBtn3"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/mqhy_pay_card_item"
+                android:textSize="@dimen/mqhy_pay_title" />
+
+            <Button
+                android:id="@+id/mqhyPayCardMoneyBtn4"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mqhy_pay_card_item"
+                android:textSize="@dimen/mqhy_pay_title" />
+
+            <Button
+                android:id="@+id/mqhyPayCardMoneyBtn5"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/mqhy_pay_card_item"
+                android:textSize="@dimen/mqhy_pay_title" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="3dp" >
+
+            <Button
+                android:id="@+id/mqhyPayCardMoneyBtn6"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/mqhy_pay_card_item"
+                android:textSize="@dimen/mqhy_pay_title" />
+
+            <Button
+                android:id="@+id/mqhyPayCardMoneyBtn7"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mqhy_pay_card_item"
+                android:textSize="@dimen/mqhy_pay_title" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mqhy_pay_card_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/mqhy_pay_initCardMoney"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/mqhyPayRechargeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mqhy_pay_card_pay"
+            android:text="@string/mqhy_pay_new_recharge"
+            android:textSize="@dimen/mqhy_pay_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mqhy_pay_neirong1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mqhy_pay_title_tip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mqhy_pay_neirong2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mqhy_pay_title_tip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mqhy_pay_neirong3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mqhy_pay_title_tip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!--
+   <LinearLayout android:layout_width="match_parent" android:layout_height="60dp" android:orientation="horizontal">
+        
+         <Button
+             android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="返回" />
+        
+        <TextView
+            android:id="@+id/textId"
+            
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:textSize="24dp"
+        android:text="充值页面" />
+        
+    </LinearLayout>
+   <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+       <EditText
+           android:id="@+id/cardMoney"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="29dp"
+           android:ems="10"
+           android:inputType="textPersonName"
+           android:text="面额" >
+
+           <requestFocus />
+       </EditText>
+    
+      <EditText
+        android:id="@+id/sn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cardMoney"
+        android:layout_below="@+id/cardMoney"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="textPersonName" 
+        android:text="卡号">
+    </EditText>
+    
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sn"
+        android:layout_below="@+id/sn"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="密码" />
+
+    <EditText
+        android:id="@+id/payMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="金额" />
+
+    <Button
+        android:id="@+id/btn_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/payMoney"
+        android:layout_below="@+id/payMoney"
+        android:layout_marginTop="19dp"
+        android:text="立即充值" />
+       
+      
+        
+    </LinearLayout>
+    -->
+
+</RelativeLayout>
